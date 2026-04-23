@@ -7,18 +7,19 @@
 
 // Exercício 1 — objetoParaJSON
 export function objetoParaJSON(objeto) {
-  // escreva seu código aqui
+  return JSON.stringify(objeto)
+  // escreva seu codigo aqui 
 }
 
 // Exercício 2 — jsonParaObjeto
 export function jsonParaObjeto(texto) {
-  // escreva seu código aqui
+  return JSON.parse(texto)
 }
 
 // Exercício 3 — clonarObjeto
 export function clonarObjeto(objeto) {
-  // escreva seu código aqui
-}
+  return JSON.parse(JSON.stringify(objeto))
+}sd
 
 // ──────────────────────────────────────────────────
 // Função auxiliar — simula uma consulta ao banco que demora 100ms
@@ -33,11 +34,18 @@ function simularConsulta(id) {
 }
 
 // Exercício 4 — buscarDados
-export async function buscarDados(id) {
-  // escreva seu código aqui
-}
+export async function dividirSeguro(a, b) {
+  if (b === 0) {
+    throw new Error('Divisão por zero')
+  }
 
+  return a / b
+}
 // Exercício 5 — dividirSeguro
 export async function dividirSeguro(a, b) {
-  // escreva seu código aqui
+  if (b === 0) {
+    throw new Error('Divisão por zero')
+  }
+
+  return a / b
 }
