@@ -34,13 +34,11 @@ function simularConsulta(id) {
 }
 
 // Exercício 4 — buscarDados
-export async function dividirSeguro(a, b) {
-  if (b === 0) {
-    throw new Error('Divisão por zero')
-  }
-
-  return a / b
+export async function buscarDados(id) {
+  const resultado = await simularConsulta(id);
+  return resultado;
 }
+
 // Exercício 5 — dividirSeguro
 export async function dividirSeguro(a, b) {
   if (b === 0) {
